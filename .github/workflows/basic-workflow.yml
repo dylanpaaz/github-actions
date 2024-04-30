@@ -3,8 +3,8 @@ name: Continuous integration example
 on: 
 
   schedule:
-     - cron: '32 12 * * *' # run at 2 AM UTC
-  push:
+     - cron: '32 12 * * *' 
+
       
 jobs:
 
