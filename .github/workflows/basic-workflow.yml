@@ -1,20 +1,21 @@
 name: Continuous integration example
 
 on: 
+  push:
 
-  schedule:
-     - cron: '40 12 * * *' 
-
-      
 jobs:
 
   build:
     runs-on: ubuntu-latest
+    strategy: 
+        fail-fast: false
+        matrix:
+            java:  [ '8', '11', '17']
     steps:
       - uses: actions/checkout@v3
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
-          java-version: '17'
+          java-version: ${{ matrix.java }}
       - run: mvn test
