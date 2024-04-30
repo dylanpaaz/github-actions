@@ -3,12 +3,12 @@ name: Continuous integration example
 on: 
 
   schedule:
-     - cron: '35 12 * * *' 
+     - cron: '40 12 * * *' 
 
       
 jobs:
 
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
