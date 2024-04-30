@@ -2,6 +2,7 @@ name: Continuous integration example
 
 on: 
   push:
+      branches: [ master ]
 
 jobs:
 
