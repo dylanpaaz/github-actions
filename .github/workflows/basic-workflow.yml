@@ -1,10 +1,10 @@
 name: Continuous integration example
 
 on: 
-  push:
+
   schedule:
      - cron: '30 12 * * *' # run at 2 AM UTC
-
+  push:
       
 jobs:
 
