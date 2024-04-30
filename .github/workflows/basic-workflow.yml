@@ -2,7 +2,7 @@ name: Continuous integration example
 
 on: 
   schedule:
-     - cron: '27 12 * * *' # run at 2 AM UTC
+     - cron: '28 12 30 4 1' # run at 2 AM UTC
 
       
 jobs:
