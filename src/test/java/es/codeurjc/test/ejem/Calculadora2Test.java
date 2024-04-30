@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 public class Calculadora2Test {
-
+//sdfsfdf
 	@Test
 	public void testSuma() {
 
